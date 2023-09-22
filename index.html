@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <main>
+        <img src="./assent/titulo.png" alt="titulo con caligrafia de grandblue fantasy">
+        </div>
+        <button onclick="comenzarPartida()" id="start" class="button-start">Start</button>
+        <div id="login" class="modal">
+            <div class="modal-content">
+                <button onclick="cerrarModal('login');mostrarBoton('start')" class="cerrar">x</button>
+                <h2>Login</h2>
+                <div>
+                    <label>Mail</label>
+                    <input id="Mail" type="text">
+                    <label>Password</label>
+                    <input id="Password" type="text">
+                </div>
+                <br>
+                <a><button onclick="verificacionLogout()"class="b-login">Login</button></a>
+                <br>
+                <span onclick="abrirModal('registro');cerrarModal('login')" class="b-registro" type="button">Registro</span>
+            </div>
+        </div>
+        <div id="registro" class="modal">
+            <div class="modal-content">
+                <button onclick="cerrarModal('registro');mostrarBoton('start')" class="cerrar">x</button>
+                <h2>Crear Cuenta</h2>
+                <div>
+                    <label>Mail</label>
+                    <input id="nuevoMail" type="text">
+                    <label>Password</label>
+                    <input id="nuevoPassword" type="text">
+                </div>
+                <br>
+                <br>
+                <br>
+                <button onclick="insertarDatosUsuario()" class="b-login">Siguiente</button>
+            </div>
+        </div>
+        <div id="personaje" class="modal">
+            <div class="modal-personaje">
+                <button onclick="cerrarModal('personaje');mostrarBoton('start')" class="b-cerrar">x</button>
+                <h2 class="titulo-creacion">Creacion de Personaje</h2>
+                <div class="datos-personaje">
+                    <label>Nombre:</label>
+                    <br>
+                    <input id="Nombre" type="text">
+                </div>
+                <div class="clases">
+                    <label>Clases</label>
+                    <br>
+                    <button onclick="selecionClase(0)" class="b-guardado">Guerrero</button>
+                    <button onclick="selecionClase(1)" class="b-guardado">Arquero</button>
+                    <button onclick="selecionClase(2)" class="b-guardado">Brujo</button>
+                </div>
+                <div class="sexo">
+                    <label>Sexo</label>
+                    <br>
+                    <button onclick="selecionSexoJugador(0)" class="b-guardado">Hombre</button>
+                    <button onclick="selecionSexoJugador(1)" class="b-guardado">Mujer</button>
+                </div>
+                <div id="imagen-personaje" class="imagenes-personaje">
+                </div>
+                <div class="descripcion">
+                    <h3>Descripcion</h3>
+                    <p>
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <p>Habilidades</p>
+                    <div>
+                        <div id="habilidad-1" class="spell-div"></div>
+                        <div id="habilidad-2" class="spell-div"></div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="equipo">
+                    <p>Equipo</p>
+                    <div id="items" class="inventario"></div>
+                </div>
+                <div class="atributos">
+                    <br>
+                    <p>Atributos</p>
+                    <span>Ataque: </span><span id="atq"></span>
+                    <br>
+                    <span>Defenza: </span><span id="dfz"></span>
+                    <br>
+                    <span>Vitalidad: </span><span id="vit"></span>
+                </div>
+                <button onclick="guardarDatosUsuario()" class="b-guardado" >Guardar</button>
+            </div>
+        </div>
+        <button onclick="mostrarPersonaje()" id="mapa-inicio" class="mapa-inicio">Mostrar Personaje</button>
+        <div id="atributos" class="modal">
+            <div class="modal-personaje">
+                <h2 class="titulo-creacion">Ficha de Personaje</h2>
+                <div class="sexo">
+                    <h2 id="sexo-jugador"></h2>
+                </div>
+                <div class="clases">
+                    <h2 id="clase-jugador"></h2>
+                </div>
+                <div class="descripcion"></div>
+                <div class="datos-personaje">
+                    <h2 id="nombre-jugador"></h2>
+                </div>
+                <div id="personaje-jugador" class="imagenes-personaje"></div>
+                <div class="habilidades">
+                    <p>Habilidades</p>
+                    <div>
+                        <div id="habilidad-uno" class="spell-div"></div>
+                        <div id="habilidad-dos" class="spell-div"></div>
+                    </div>
+                </div>
+                <div class="equipo">
+                    <p>Equipo</p>
+                    <div id="items-jugador" class="inventario"></div>
+                </div>
+                <div class="atributos">
+                    <br>
+                    <p>Atributos</p>
+                    <span>Ataque: </span><span id="atq-jugador"></span>
+                    <br>
+                    <span>Defenza: </span><span id="dfz-jugador"></span>
+                    <br>
+                    <span>Vitalidad: </span><span id="vit-jugador"></span>
+                </div>
+                <button onclick="cerrarModal('atributos');mostrarBoton('start')" class="b-cerrar">X</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="texto-footer">
+            <p>
+                Pagina Diseñada por: Felipe E. Salom
+                <br>
+                Esta Pagina Fue Desarrollada sin Fines de Lucro
+            </p>
+            <p>
+                Derechos Reservados Cygames
+                <br>
+                GranBlue Fantasy
+            </p>
+            <p>
+                Fuentes:  https://gbf.wiki/ (personajes)
+                <br>
+                https://www.tosbase.com/ (items) 
+                <br>
+                https://www.eventhubs.com/ (Esenarios)
+            </p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
