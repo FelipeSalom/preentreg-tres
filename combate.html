@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/combate.css">
+</head>
+<body id="bodyCombate">
+    <header>
+        <nav>
+            <ul><button class="btn-accion" onclick="logout()">Logout</button></ul>
+        </nav>
+    </header>
+    <main>
+        <div id="imagenJugador" class="img-jugador">
+        </div>
+        <div id="tableroCombate" class="tablero">
+            <div class="encabezado-tabla">
+                <div class="jugador">
+                    <div>
+                        <span>Nombre: </span><span id="jugador"></span>
+                    </div>
+                    <div>
+                        <span>Vida: </span><span id="vidaJugador"></span>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="autoRonda()" class="cont-auto">Auto</button>
+                </div>
+            </div>
+            <div  class="combate">
+                <div id="combate" class="historial">
+                    <!-- <p id="jugadorTurno"></p>
+                    <p id="moustroTurno"></p> -->
+                </div>
+            </div>
+            <div class="moustro">
+                <div class="moustroDatos">
+                    <div>
+                        <span>Nombre: </span><span id="moustro"></span>
+                    </div>
+                    <div>
+                        <span>Vida: </span><span id="vidaMoustro"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="acciones">
+                <div class="acciones-contenedor">
+                    <div class="lineaUno">
+                        <button class="btn-accion" onclick="ronda(0)">Ataque</button>
+                        <button class="btn-accion" onclick="ronda(1)">Defenza</button>
+                    </div>
+                    <div class="LineaDos">
+                        <button class="btn-accion"onclick="ronda(3)">Pocion</button>
+                        <button class="btn-accion"onclick="ronda(2)">Habilidad</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="imagenMoustro" class="img-moustro">
+        </div>
+    </main>
+    <footer>
+        <div class="texto-footer">
+            <p>
+                Pagina Diseñada por: Felipe E. Salom
+                <br>
+                Esta Pagina Fue Desarrollada sin Fines de Lucro
+            </p>
+            <p>
+                Derechos Reservados Cygames
+                <br>
+                GranBlue Fantasy
+            </p>
+            <p>
+                Fuentes:  https://gbf.wiki/ (personajes)
+                <br>
+                https://www.tosbase.com/ (items) 
+                <br>
+                https://www.eventhubs.com/ (Esenarios)
+            </p>
+        </div>
+    </footer>
+    <script src="./combate.js"></script>
+</body>
+</html>

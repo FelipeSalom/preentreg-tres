@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "nombre": "Dragon Esmeralda",
+        "ubicacion": "Archipiélago de Port Breeze",
+        "imagenes":
+            {
+                "esenario": "../assent/ese1.png",
+                "miniaturaEsenario": "./assent/min-ese-1.png",
+                "miniaturaDragon": "./assent/enemigo 1 (1).png",
+                "dragon": "./assent/enemigo 1 (2).png"
+            }
+    },
+    {
+        "id" : 2,
+        "nombre": "Dragon Negro",
+        "ubicacion": "Isla Envuelta en Niebla",
+        "imagenes":
+            {
+            "esenario": "../assent/ese2.jpg",
+            "miniaturaEsenario": "./assent/min-ese-2.png",
+            "miniaturaDragon": "./assent/enemigo 2 (1).png",
+            "dragon": "./assent/enemigo 2 (2).png"
+            }
+    },
+    {
+        "id" : 3,
+        "nombre": "Dragon Bermellon",
+        "ubicacion": "Ducado de Valtz",
+        "imagenes": 
+            {
+            "esenario": "../assent/ese3.jpg",
+            "miniaturaEsenario": "./assent/min-ese-3.png",
+            "miniaturaDragon": "./assent/enemigo 3 (1).png",
+            "dragon": "./assent/enemigo 3 (2).png"
+            }
+    },
+    {
+        "id" : 4,
+        "nombre": "Dragon Azul",
+        "ubicacion": "Islas Auguste",
+        "imagenes":
+            {
+            "esenario": "../assent/ese4.jpg",
+            "miniaturaEsenario": "./assent/min-ese-4.png",
+            "miniaturaDragon": "./assent/enemigo 4 (1).png",
+            "dragon": "./assent/enemigo 4 (2).png"
+            }
+    },
+    {
+        "id" : 5,
+        "nombre": "Dragon Dorado",
+        "ubicacion": "Lumacie",
+        "imagenes":
+            {
+            "esenario": "../assent/ese5.jpg",
+            "miniaturaEsenario": "./assent/min-ese-5.png",
+            "miniaturaDragon": "./assent/enemigo 5 (1).png",
+            "dragon": "./assent/enemigo 5 (2).png"
+            }
+    }
+]

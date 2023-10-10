@@ -1,0 +1,173 @@
+[
+    {
+        "nombre": "guerrero",
+        "descripcion": "",
+        "imagenSexo": [
+            {
+                "sexo": "Hombre",
+                "chibi": "./assent/chibi-g-h.png",
+                "normal": "./assent/img-g-h.png"
+            },
+            {
+                "sexo": "Mujer",
+                "chibi": "./assent/chibi-g-m.png",
+                "normal": "./assent/img-g-m.png"
+            }
+        ],
+        "habilidades": [
+            {
+                "nombre": "Grito de Batalla:",
+                "descripcion": "Ootorga un 10% + daño en los siguiente 2 Ataques",
+                "daño": 10,
+                "imagen": "./assent/g-h-1.png"
+            },
+            {
+                "nombre": "Maestria Armas C/C:",
+                "descripcion": "Puede Realizar bloqueos con su arma",
+                "daño": 20,
+                "imagen": "./assent/g-h-2.png"
+            }
+        ],
+        "atributos":{
+                "ataque": 5,
+                "defenza": 7,
+                "vitalidad": 10
+        },
+        "inventario":[
+            {
+                "tipo": "pecho",
+                "imagen": "./assent/arm-1 (1).png"
+            },
+            {
+                "tipo": "glovs",
+                "imagen": "./assent/arm-1 (3).png"
+            },
+            {
+                "tipo": "pants",
+                "imagen": "./assent/arm-1 (4).png"
+            },
+            {
+                "tipo": "bots",
+                "imagen": "./assent/arm-1 (2).png"
+            },
+            {
+                "tipo": "weapon",
+                "imagen": "./assent/w-1.png"
+            }
+        ]
+    },
+    {
+        "nombre": "Arquero",
+        "descripcion": "",
+        "imagenSexo": [
+            {
+                "sexo": "Hombre",
+                "chibi": "./assent/chibi-a-h.png",
+                "normal": "./assent/img-a-h.png"
+            },
+            {
+                "sexo": "Mujer",
+                "chibi": "./assent/chibi-a-m.png",
+                "normal": "./assent/img-a-m.png"
+            }
+        ],
+        "habilidades": [
+            {
+                "nombre": "Grito de Batalla",
+                "descripcion": "Ootorga un 10% + daño en los siguiente 2 Ataques",
+                "daño": 10,
+                "imagen": "./assent/a-h-1.png"
+            },
+            {
+                "nombre": "Maestria Armas Cuerpo a Cuerpo",
+                "descripcion": "Puede Realizar bloqueos con su arma",
+                "daño": 20,
+                "imagen": "./assent/a-h-2.png"
+            }
+        ],
+        "atributos":{
+                "ataque": 7,
+                "defenza": 10,
+                "vitalidad": 5
+        },
+        "inventario":[
+            {
+                "tipo": "pecho",
+                "imagen": "./assent/arm-2 (1).png"
+            },
+            {
+                "tipo": "glovs",
+                "imagen": "./assent/arm-2 (3).png"
+            },
+            {
+                "tipo": "pants",
+                "imagen": "./assent/arm-2 (4).png"
+            },
+            {
+                "tipo": "bots",
+                "imagen": "./assent/arm-2 (2).png"
+            },
+            {
+                "tipo": "weapon",
+                "imagen": "./assent/w-2.png"
+            }
+        ]
+    },
+    {
+        "nombre": "mago",
+        "descripcion": "",
+        "imagenSexo": [
+            {
+                "sexo": "Hombre",
+                "chibi": "./assent/chibi-m-h.png",
+                "normal": "./assent/img-m-h.png"
+            },
+            {
+                "sexo": "Mujer",
+                "chibi": "./assent/chibi-m-m.png",
+                "normal": "./assent/img-m-m.png"
+            }
+        ],
+        "habilidades": [
+            {
+                "nombre": "Grito de Batalla:",
+                "descripcion": "Ootorga un 10% + daño en los siguiente 2 Ataques",
+                "daño": 10,
+                "imagen": "./assent/m-h-1.png"
+            },
+            {
+                "nombre": "Maestria Armas Cuerpo a Cuerpo:",
+                "descripcion": "Puede Realizar bloqueos con su arma",
+                "daño": 20,
+                "imagen": "./assent/m-h-2.png"
+            }
+        ],
+        "atributos":{
+                "ataque": 10,
+                "defenza": 5,
+                "vitalidad": 7
+        },
+        "inventario":[
+            {
+                "tipo": "pecho",
+                "imagen": "./assent/arm-3 (1).png"
+            },
+            {
+                "tipo": "glovs",
+                "imagen": "./assent/arm-3 (3).png"
+            },
+            {
+                "tipo": "pants",
+                "imagen": "./assent/arm-3 (4).png"
+            },
+            {
+                "tipo": "bots",
+                "imagen": "./assent/arm-3 (2).png"
+            },
+            {
+                "tipo": "weapon",
+                "imagen": "./assent/w-3.png"
+            }
+        ]
+    }
+]

@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul><button class="btn-accion" onclick="logout()">Logout</button></ul>
+        </nav>
+    </header>
     <main>
         <img src="./assent/titulo.png" alt="titulo con caligrafia de grandblue fantasy">
         </div>
@@ -96,42 +101,8 @@
                 <button onclick="guardarDatosUsuario()" class="b-guardado" >Guardar</button>
             </div>
         </div>
-        <button onclick="mostrarPersonaje()" id="mapa-inicio" class="mapa-inicio">Mostrar Personaje</button>
-        <div id="atributos" class="modal">
-            <div class="modal-personaje">
-                <h2 class="titulo-creacion">Ficha de Personaje</h2>
-                <div class="sexo">
-                    <h2 id="sexo-jugador"></h2>
-                </div>
-                <div class="clases">
-                    <h2 id="clase-jugador"></h2>
-                </div>
-                <div class="descripcion"></div>
-                <div class="datos-personaje">
-                    <h2 id="nombre-jugador"></h2>
-                </div>
-                <div id="personaje-jugador" class="imagenes-personaje"></div>
-                <div class="habilidades">
-                    <p>Habilidades</p>
-                    <div>
-                        <div id="habilidad-uno" class="spell-div"></div>
-                        <div id="habilidad-dos" class="spell-div"></div>
-                    </div>
-                </div>
-                <div class="equipo">
-                    <p>Equipo</p>
-                    <div id="items-jugador" class="inventario"></div>
-                </div>
-                <div class="atributos">
-                    <br>
-                    <p>Atributos</p>
-                    <span>Ataque: </span><span id="atq-jugador"></span>
-                    <br>
-                    <span>Defenza: </span><span id="dfz-jugador"></span>
-                    <br>
-                    <span>Vitalidad: </span><span id="vit-jugador"></span>
-                </div>
-                <button onclick="cerrarModal('atributos');mostrarBoton('start')" class="b-cerrar">X</button>
+        <div id="modalMisiones" class="modal">
+            <div id="misiones" class="modal-misiones">
             </div>
         </div>
     </main>
