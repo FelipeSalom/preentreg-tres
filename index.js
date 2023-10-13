@@ -1,10 +1,12 @@
 class usuario {
-    constructor (mail, password, nombre, clase, sexo) {
+    constructor (mail, password, nombre, clase, sexo, inventario, equipo) {
         this.mail = mail
         this.password = password
         this.nombre = nombre
         this.clase = clase
         this.sexo = sexo
+        this.inventario = inventario
+        this.equipo = equipo
     }
 };
 let usuarios = [];
@@ -13,40 +15,30 @@ let mailJugador = "";
 let passwordJugador = "";
 let claseJugador = 0;
 let sexoJugador = 0;
-let tablonMisiones = document.querySelector("#misiones");
+let equipoJugador = [];
+
 comprobarEstatus()
+
 function comprobarEstatus(){
     let estado = sessionStorage.getItem('status');
     if(estado != null){
-        mostrarMisiones();
-        abrirModal("modalMisiones");
-        ocultarBoton('start');
+        abrirMain("mapa");
+        cerrarMain("index");
     }
 }
 function logout(){
-    sessionStorage.clear('status');
-    cerrarModal("modalMisiones");
+    sessionStorage.clear();
+    cerrarMain("mapa");
+    abrirMain('index');
     mostrarBoton('start');
-    console.log ("que onda");
-    tablonMisiones.innerHTML = ''
 }
-function mostrarMisiones(){
-    fetch("misiones.json")
-    .then(response => response.json())
-    .then(data => {
-        data.forEach((post) => {
-            let div = document.createElement("div")
-            div.innerHTML = 
-                '<a href="./combate.html" class="ancla-misiones">'+
-                    '<div class="misiones" type="button" onclick="guardarMapa('+post.id+')">'+
-                        '<div class="min-dragon"><img src="'+post.imagenes.miniaturaDragon+'" class="mision-img"></div>'+
-                        '<div class="min-mapa"><img src="'+post.imagenes.miniaturaEsenario+'" class="mision-img"></div>'+
-                        '<div class="des-mision"><h2>'+post.nombre+'</h2><p>'+post.ubicacion+'</p></div>'+
-                    '</div>'+
-                '</a>'
-            tablonMisiones.append(div);
-        });
-    });
+function cerrarMain(id) {
+    let main = document.getElementById(id);
+    main.style.display = "none";
+}
+function abrirMain(id) {
+    let main = document.getElementById(id);
+    main.style.display = "flex";
 }
 fetch("clases.json")
                 .then(response => response.json())
@@ -58,6 +50,7 @@ fetch("clases.json")
                     document.getElementById("atq").innerHTML = data[claseJugador].atributos.ataque
                     document.getElementById("dfz").innerHTML = data[claseJugador].atributos.defenza
                     document.getElementById("vit").innerHTML = data[claseJugador].atributos.vitalidad
+                    equipoJugador =  data[claseJugador].inventario
                 });
 function limpiarCampos(){
     document.getElementById("Mail").value = "";
@@ -115,9 +108,9 @@ function verificacionLogout(){
         for (let i = 0; i < usuarios.length; i++){
             if (mailIngresado === usuarios[i].mail && passIngresado === usuarios[i].password){
                 indiceJugador = i
-                cerrarModal('login');
-                abrirModal("modalMisiones");
-                mostrarMisiones()
+                cerrarModal('index');
+                cerrarModal("login")
+                abrirModal("mapa");
                 guardarUsuario(i)
                 return
             }
@@ -129,7 +122,9 @@ function verificacionLogout(){
     }
 }
 function guardarUsuario(id){
+    let idJugador = JSON.stringify(id);
     let jugador = JSON.stringify(usuarios[id]);
+    sessionStorage.setItem('idJugador', idJugador)
     sessionStorage.setItem('jugador', jugador);
     sessionStorage.setItem('status', true);    
 }
@@ -154,7 +149,8 @@ function insertarDatosUsuario(){
 }
 function guardarDatosUsuario() {
     let nombreJugador = document.getElementById("Nombre").value;
-    usuarios.push (new usuario(mailJugador, passwordJugador, nombreJugador, claseJugador, sexoJugador));
+    let nuevoInventario = [];
+    usuarios.push (new usuario(mailJugador, passwordJugador, nombreJugador, claseJugador, sexoJugador, nuevoInventario, equipoJugador));
     let conversorUsuarios = JSON.stringify(usuarios);
     localStorage.setItem('usuarios', conversorUsuarios);
     cerrarModal('personaje');
@@ -162,13 +158,25 @@ function guardarDatosUsuario() {
 }
 function selecionClase(id){
     claseJugador = id;
+    fetch("clases.json")
+    .then(response => response.json())
+    .then(data => { equipoJugador = data[claseJugador].inventario});
     mostrarFicha();
 }
 function selecionSexoJugador(id){
     sexoJugador = id;
     mostrarFicha();
 }
-function guardarMapa(id){
-    let i = JSON.stringify(id)
-    sessionStorage.setItem('mapa', i);
+function mostrarFicha(){
+    fetch("clases.json")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("imagen-personaje").innerHTML = '<img src="'+data[claseJugador].imagenSexo[sexoJugador].normal+'" alt=" " class="img-normal">'+'<img src="'+data[claseJugador].imagenSexo[sexoJugador].chibi+'" alt=" " class="img-chibi">';
+        document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[0].nombre+data[claseJugador].habilidades[0].descripcion;
+        document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[1].nombre+data[claseJugador].habilidades[1].descripcion;
+        document.getElementById("items").innerHTML = '<img src="'+data[claseJugador].inventario[4].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[0].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[1].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[2].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[3].imagen+'" alt=" " class="items">'
+        document.getElementById("atq").innerHTML = data[claseJugador].atributos.ataque
+        document.getElementById("dfz").innerHTML = data[claseJugador].atributos.defenza
+        document.getElementById("vit").innerHTML = data[claseJugador].atributos.vitalidad
+    });
 }

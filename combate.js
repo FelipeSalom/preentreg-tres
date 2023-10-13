@@ -38,8 +38,10 @@ let opciones = [
     }
 ];
 let historial = document.querySelector("#combate");
+
 jugador =JSON.parse(sessionStorage.getItem('jugador'));
 id =JSON.parse(sessionStorage.getItem('mapa'));
+
 fetch("misiones.json")
     .then(response => response.json())
     .then(data => {
@@ -51,14 +53,24 @@ fetch("misiones.json")
             }
         });
     });
-document.getElementById("jugador").innerHTML = jugador.nombre;
-document.getElementById("vidaJugador").innerHTML = stats[0].vida;
-document.getElementById("vidaMoustro").innerHTML = stats[1].vida;
 fetch("clases.json")
     .then(response => response.json())
     .then(data => {
         document.getElementById("imagenJugador").innerHTML = '<img src="'+data[jugador.clase].imagenSexo[jugador.sexo].normal+'" class="img">';
     });
+    document.getElementById("jugador").innerHTML = jugador.nombre;
+    document.getElementById("vidaJugador").innerHTML = stats[0].vida;
+    document.getElementById("vidaMoustro").innerHTML = stats[1].vida;
+
+verificacionMapa();
+
+function verificacionMapa(){
+    if (!id){
+        cerrarMain("main-combate")
+    }else{
+        abrirMain("main-combate")
+    }
+}
 function ronda(i){
     if (stats[1].vida < 0 || stats[0].vida < 0 ) {
         alert("Reinicie la Partida Para Volver a Pelear")
@@ -152,5 +164,13 @@ function reiniciarPartida(){
     document.getElementById("vidaMoustro").innerHTML = stats[1].vida;
 }
 function logout(){
-    sessionStorage.removeItem('status');
+    sessionStorage.clear();
+}
+function cerrarMain(id) {
+    let main = document.getElementById(id);
+    main.style.display = "none";
+}
+function abrirMain(id) {
+    let main = document.getElementById(id);
+    main.style.display = "flex";
 }

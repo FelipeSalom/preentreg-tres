@@ -1,0 +1,227 @@
+[
+    {
+        "clase": "Guerrero", 
+        "tipo": "pecho",
+        "imagen": "./assent/arm-4 (1).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-4 (3).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "pants",
+        "imagen": "./assent/arm-4 (4).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "bots",
+        "imagen": "./assent/arm-4 (2).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "weapon",
+        "imagen": "./assent/w-4.png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-7 (1).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-7 (3).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "pants",
+        "imagen": "./assent/arm-7 (4).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "bots",
+        "imagen": "./assent/arm-7 (2).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "weapon",
+        "imagen": "./assent/w-7.png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-10 (1).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-10 (3).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "pants",
+        "imagen": "./assent/arm-10 (4).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "bots",
+        "imagen": "./assent/arm-10 (2).png"
+    },
+    {
+        "clase": "Guerrero",
+        "tipo": "weapon",
+        "imagen": "./assent/w-10.png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-5 (1).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-5 (3).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "pants",
+        "imagen": "./assent/arm-5 (4).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "bots",
+        "imagen": "./assent/arm-5 (2).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "weapon",
+        "imagen": "./assent/w-5.png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-8 (1).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-8 (3).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "pants",
+        "imagen": "./assent/arm-8 (4).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "bots",
+        "imagen": "./assent/arm-8 (2).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "weapon",
+        "imagen": "./assent/w-8.png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-12 (1).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-12 (3).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "pants",
+        "imagen": "./assent/arm-12 (4).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "bots",
+        "imagen": "./assent/arm-12 (2).png"
+    },
+    {
+        "clase": "Arquero",
+        "tipo": "weapon",
+        "imagen": "./assent/w-12.png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-6 (1).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-6 (3).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "pants",
+        "imagen": "./assent/arm-6 (4).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "bots",
+        "imagen": "./assent/arm-6 (2).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "weapon",
+        "imagen": "./assent/w-6.png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-9 (1).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-9 (3).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "pants",
+        "imagen": "./assent/arm-9 (4).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "bots",
+        "imagen": "./assent/arm-9 (2).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "weapon",
+        "imagen": "./assent/w-9.png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "pecho",
+        "imagen": "./assent/arm-13 (1).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "glovs",
+        "imagen": "./assent/arm-13 (3).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "pants",
+        "imagen": "./assent/arm-13 (4).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "bots",
+        "imagen": "./assent/arm-13 (2).png"
+    },
+    {
+        "clase": "Brujo",
+        "tipo": "weapon",
+        "imagen": "./assent/w-13.png"
+    }
+]

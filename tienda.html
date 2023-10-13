@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tienda.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><button class="btn-accion" onclick="logout()">Logout</button></a>
+        </nav>
+    </header>
+        <main>
+            <div id="imagenJugador" class="img-jugador">
+            </div>
+            <div>
+                <div id="modalTienda" class="modal">
+                    <div class="encabezadoTienda">
+                        <p class="titulo">Tienda</p>
+                        <button class="btn-tienda" onclick="filtrarItems('Guerrero')">Guerrero</button>
+                        <button class="btn-tienda" onclick="filtrarItems('Arquero')">Arquero</button>
+                        <button class="btn-tienda" onclick="filtrarItems('Brujo')">Brujo</button>
+                        <button class="btn-tienda" onclick="mostrarTodo()">Todo</button>
+                    </div>
+                    <div id="tienda" class="modal-tienda">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <p class="encabezadoInventario">Inventario</p>
+                    <div id="inventario" class="inventario">
+                    </div>
+                </div>
+            </div>
+            <div id="imagenMoustro" class="img-moustro">
+                <img src="./assent/cae455f26bcff58b84468b8f1c2fc7be.png" class="img">';
+            </div>
+        </main>
+        <footer>
+            <div class="texto-footer">
+                <p>
+                    Pagina Diseñada por: Felipe E. Salom
+                    <br>
+                    Esta Pagina Fue Desarrollada sin Fines de Lucro
+                </p>
+                <p>
+                    Derechos Reservados Cygames
+                    <br>
+                    GranBlue Fantasy
+                </p>
+                <p>
+                    Fuentes:  https://gbf.wiki/ (personajes)
+                    <br>
+                    https://www.tosbase.com/ (items) 
+                    <br>
+                    https://www.eventhubs.com/ (Esenarios)
+                </p>
+            </div>
+        </footer>
+        <script src="./tienda.js"></script>
+    
+</body>
+</html>

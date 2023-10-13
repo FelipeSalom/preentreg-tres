@@ -12,8 +12,8 @@
             <ul><button class="btn-accion" onclick="logout()">Logout</button></ul>
         </nav>
     </header>
-    <main>
-        <img src="./assent/titulo.png" alt="titulo con caligrafia de grandblue fantasy">
+    <main id="index" class="index">
+        <img src="./assent/titulo.png" alt="titulo con caligrafia de grandblue fantasy" style="display: flex; flex-direction: row; align-items: center;">
         </div>
         <button onclick="comenzarPartida()" id="start" class="button-start">Start</button>
         <div id="login" class="modal">
@@ -101,9 +101,14 @@
                 <button onclick="guardarDatosUsuario()" class="b-guardado" >Guardar</button>
             </div>
         </div>
-        <div id="modalMisiones" class="modal">
-            <div id="misiones" class="modal-misiones">
-            </div>
+    </main>
+    <main id="mapa" class="main-mapa">
+        <div class="grid">
+            <img src="./assent/titulo.png" alt="titulo con caligrafia de grandblue fantasy" style="width: 778px; height: 286px">
+            <a class="base" href="./base.html"><img src="./assent/btn-base.png" class="btn"></a>
+            <a class="aventura" href="./combate.html"><img src="./assent/btn-aventura.png" class="btn"></a>
+            <a class="misiones" href="./misiones.html"><img src="./assent/btn-misiones.png" class="btn"></a>
+            <a class="tienda" href="./tienda.html"><img src="./assent/btn-tienda.png" class="btn"></a>
         </div>
     </main>
     <footer>
