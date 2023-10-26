@@ -1,7 +1,7 @@
 [
     {
-        "nombre": "guerrero",
-        "descripcion": "",
+        "nombre": "Guerrero",
+        "descripcion": "Empuña espadas con habilidad y llena tu indicador de carga al instante mientras lideras el frente de batalla. Puede que tu defensa no sea la mejor, pero la ofensiva es la gran defensa, como se suele decir. Trabajar con aliados para superar la adversidad",
         "imagenSexo": [
             {
                 "sexo": "Hombre",
@@ -16,14 +16,14 @@
         ],
         "habilidades": [
             {
-                "nombre": "Grito de Batalla:",
-                "descripcion": "Ootorga un 10% + daño en los siguiente 2 Ataques",
+                "nombre": "Arsenal completo:",
+                "descripcion": "Obtenga carga instantánea",
                 "daño": 10,
                 "imagen": "./assent/g-h-1.png"
             },
             {
-                "nombre": "Maestria Armas C/C:",
-                "descripcion": "Puede Realizar bloqueos con su arma",
+                "nombre": "Furia:",
+                "descripcion": "Todas las partes ganan ATK Up",
                 "daño": 20,
                 "imagen": "./assent/g-h-2.png"
             }
@@ -35,22 +35,32 @@
         },
         "inventario":[
             {
+                "id": "45",
+                "clase": "Guerrero",
                 "tipo": "pecho",
                 "imagen": "./assent/arm-1 (1).png"
             },
             {
+                "id": "46",
+                "clase": "Guerrero",
                 "tipo": "glovs",
                 "imagen": "./assent/arm-1 (3).png"
             },
             {
+                "id": "47",
+                "clase": "Guerrero",
                 "tipo": "pants",
                 "imagen": "./assent/arm-1 (4).png"
             },
             {
+                "id": "48",
+                "clase": "Guerrero",
                 "tipo": "bots",
                 "imagen": "./assent/arm-1 (2).png"
             },
             {
+                "id": "49",
+                "clase": "Guerrero",
                 "tipo": "weapon",
                 "imagen": "./assent/w-1.png"
             }
@@ -58,7 +68,7 @@
     },
     {
         "nombre": "Arquero",
-        "descripcion": "",
+        "descripcion": "Evade ágilmente todos los ataques enemigos con tu ojo experto. Lanza flechas sobre las hordas enemigas o elimínalas una por una con una precisión infalible. Útil en cualquier situación.",
         "imagenSexo": [
             {
                 "sexo": "Hombre",
@@ -73,14 +83,14 @@
         ],
         "habilidades": [
             {
-                "nombre": "Grito de Batalla",
-                "descripcion": "Ootorga un 10% + daño en los siguiente 2 Ataques",
+                "nombre": "Lluvia de Flechas:",
+                "descripcion": "150-300% de daño elemental a todos los enemigos.",
                 "daño": 10,
                 "imagen": "./assent/a-h-1.png"
             },
             {
-                "nombre": "Maestria Armas Cuerpo a Cuerpo",
-                "descripcion": "Puede Realizar bloqueos con su arma",
+                "nombre": "Paso rápido:",
+                "descripcion": "Obtener esquivar todo",
                 "daño": 20,
                 "imagen": "./assent/a-h-2.png"
             }
@@ -92,30 +102,40 @@
         },
         "inventario":[
             {
+                "id": "51",
+                "clase": "Arquero",
                 "tipo": "pecho",
                 "imagen": "./assent/arm-2 (1).png"
             },
             {
+                "id": "52",
+                "clase": "Arquero",
                 "tipo": "glovs",
                 "imagen": "./assent/arm-2 (3).png"
             },
             {
+                "id": "53",
+                "clase": "Arquero",
                 "tipo": "pants",
                 "imagen": "./assent/arm-2 (4).png"
             },
             {
+                "id": "54",
+                "clase": "Arquero",
                 "tipo": "bots",
                 "imagen": "./assent/arm-2 (2).png"
             },
             {
+                "id": "55",
+                "clase": "Arquero",
                 "tipo": "weapon",
                 "imagen": "./assent/w-2.png"
             }
         ]
     },
     {
-        "nombre": "mago",
-        "descripcion": "",
+        "nombre": "Mago",
+        "descripcion": "Canaliza poderes elementales en potentes ataques con un toque mágico. Utiliza tu repertorio de hechizos para explotar al máximo las debilidades elementales. Lo que te falta en destreza física lo compensas con creces con tu dominio de lo arcano.",
         "imagenSexo": [
             {
                 "sexo": "Hombre",
@@ -130,14 +150,14 @@
         ],
         "habilidades": [
             {
-                "nombre": "Grito de Batalla:",
-                "descripcion": "Ootorga un 10% + daño en los siguiente 2 Ataques",
+                "nombre": "Explosión de éter:",
+                "descripcion": "200%-300% de daño elemental a un enemigo.",
                 "daño": 10,
                 "imagen": "./assent/m-h-1.png"
             },
             {
-                "nombre": "Maestria Armas Cuerpo a Cuerpo:",
-                "descripcion": "Puede Realizar bloqueos con su arma",
+                "nombre": "Fuego:",
+                "descripcion": "200%-250% de daño de fuego a todos los enemigos.",
                 "daño": 20,
                 "imagen": "./assent/m-h-2.png"
             }
@@ -149,22 +169,32 @@
         },
         "inventario":[
             {
+                "id": "56",
+                "clase": "Brujo",
                 "tipo": "pecho",
                 "imagen": "./assent/arm-3 (1).png"
             },
             {
+                "id": "57",
+                "clase": "Brujo",
                 "tipo": "glovs",
                 "imagen": "./assent/arm-3 (3).png"
             },
             {
+                "id": "58",
+                "clase": "Brujo",
                 "tipo": "pants",
                 "imagen": "./assent/arm-3 (4).png"
             },
             {
+                "id": "59",
+                "clase": "Brujo",
                 "tipo": "bots",
                 "imagen": "./assent/arm-3 (2).png"
             },
             {
+                "id": "59",
+                "clase": "Brujo",
                 "tipo": "weapon",
                 "imagen": "./assent/w-3.png"
             }

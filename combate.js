@@ -69,6 +69,7 @@ function verificacionMapa(){
         cerrarMain("main-combate")
     }else{
         abrirMain("main-combate")
+        cerrarMain("main-sin-mision")
     }
 }
 function ronda(i){

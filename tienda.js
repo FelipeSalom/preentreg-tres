@@ -67,25 +67,27 @@ function filtrarItems(id){
     })
 };
 function comprarObjeto(id){
-    bolsaInventario.innerHTML = ""
-    jugador.inventario.push(items[id]);
-    // jugador.inventario.forEach((item) => {
-    //     indice = jugador.inventario.indexOf(item);
-    //     let div = document.createElement("div")
-    //     div.innerHTML = 
-    //         '<div class="items" type="button" onclick="venderItems('+indice+')">'+
-    //             '<img src="'+item.imagen+'" class="items-img">'+
-    //         '</div>'
-    //     bolsaInventario.append(div);
-    // })
+    usuarios[idJugador].inventario.push(items[id]);
     guardarCompras()
 }
 function venderItems(id){
-    jugador.inventario.splice(id, 1);
+    usuarios[idJugador].inventario.splice(id, 1);
     guardarCompras();
 }
 function guardarCompras(){
-    usuarios[idJugador] = jugador;
     let usuariosString = JSON.stringify(usuarios);
     localStorage.setItem('usuarios', usuariosString)
+    mostrarInventario();
+}
+function mostrarInventario(){
+    bolsaInventario.innerHTML = ""
+    usuarios[idJugador].inventario.forEach((item) => {
+        indice = usuarios[idJugador].inventario.indexOf(item);
+        let div = document.createElement("div")
+        div.innerHTML = 
+            '<div class="items" type="button" onclick="venderItems('+indice+')">'+
+                '<img src="'+item.imagen+'" class="items-img">'+
+            '</div>'
+        bolsaInventario.append(div);
+    })
 }

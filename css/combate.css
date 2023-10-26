@@ -10,6 +10,43 @@ footer {
     position: absolute;
     bottom: 0px;
 }
+.sin-mision{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.modal {
+    margin-top: 65px;
+    height: 85%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: auto;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.cartel-nomision{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.90);
+    border: #FFF;
+    font-size: 20px;
+}
 .texto-footer {
     display: flex;
     flex-direction: row;

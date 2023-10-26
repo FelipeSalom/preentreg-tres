@@ -133,7 +133,7 @@ footer {
     font-size: 20PX;
     display: grid;
     grid-template-columns: 361px 570px 395px;
-    grid-template-rows: 68px 67px 153px 130px 170px 48px;
+    grid-template-rows: 68px 67px 153px 110px 190px 48px;
     grid-template-areas:
                         ". titulo cerrar"
                         "nombre clases sexo"

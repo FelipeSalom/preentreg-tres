@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "clase": "Guerrero", 
         "tipo": "pecho",
         "imagen": "./assent/arm-4 (1).png"
@@ -10,216 +11,259 @@
         "imagen": "./assent/arm-4 (3).png"
     },
     {
+        "id": "2",
         "clase": "Guerrero",
         "tipo": "pants",
         "imagen": "./assent/arm-4 (4).png"
     },
     {
+        "id": "3",
         "clase": "Guerrero",
         "tipo": "bots",
         "imagen": "./assent/arm-4 (2).png"
     },
     {
+        "id": "4",
         "clase": "Guerrero",
         "tipo": "weapon",
         "imagen": "./assent/w-4.png"
     },
     {
+        "id": "5",
         "clase": "Guerrero",
         "tipo": "pecho",
         "imagen": "./assent/arm-7 (1).png"
     },
     {
+        "id": "6",
         "clase": "Guerrero",
         "tipo": "glovs",
         "imagen": "./assent/arm-7 (3).png"
     },
     {
+        "id": "7",
         "clase": "Guerrero",
         "tipo": "pants",
         "imagen": "./assent/arm-7 (4).png"
     },
     {
+        "id": "8",
         "clase": "Guerrero",
         "tipo": "bots",
         "imagen": "./assent/arm-7 (2).png"
     },
     {
+        "id": "9",
         "clase": "Guerrero",
         "tipo": "weapon",
         "imagen": "./assent/w-7.png"
     },
     {
+        "id": "10",
         "clase": "Guerrero",
         "tipo": "pecho",
         "imagen": "./assent/arm-10 (1).png"
     },
     {
+        "id": "11",
         "clase": "Guerrero",
         "tipo": "glovs",
         "imagen": "./assent/arm-10 (3).png"
     },
     {
+        "id": "12",
         "clase": "Guerrero",
         "tipo": "pants",
         "imagen": "./assent/arm-10 (4).png"
     },
     {
+        "id": "13",
         "clase": "Guerrero",
         "tipo": "bots",
         "imagen": "./assent/arm-10 (2).png"
     },
     {
+        "id": "14",
         "clase": "Guerrero",
         "tipo": "weapon",
         "imagen": "./assent/w-10.png"
     },
     {
+        "id": "15",
         "clase": "Arquero",
         "tipo": "pecho",
         "imagen": "./assent/arm-5 (1).png"
     },
     {
+        "id": "16",
         "clase": "Arquero",
         "tipo": "glovs",
         "imagen": "./assent/arm-5 (3).png"
     },
     {
+        "id": "17",
         "clase": "Arquero",
         "tipo": "pants",
         "imagen": "./assent/arm-5 (4).png"
     },
     {
+        "id": "18",
         "clase": "Arquero",
         "tipo": "bots",
         "imagen": "./assent/arm-5 (2).png"
     },
     {
+        "id": "19",
         "clase": "Arquero",
         "tipo": "weapon",
         "imagen": "./assent/w-5.png"
     },
     {
+        "id": "20",
         "clase": "Arquero",
         "tipo": "pecho",
         "imagen": "./assent/arm-8 (1).png"
     },
     {
+        "id": "21",
         "clase": "Arquero",
         "tipo": "glovs",
         "imagen": "./assent/arm-8 (3).png"
     },
     {
+        "id": "22",
         "clase": "Arquero",
         "tipo": "pants",
         "imagen": "./assent/arm-8 (4).png"
     },
     {
+        "id": "23",
         "clase": "Arquero",
         "tipo": "bots",
         "imagen": "./assent/arm-8 (2).png"
     },
     {
+        "id": "24",
         "clase": "Arquero",
         "tipo": "weapon",
         "imagen": "./assent/w-8.png"
     },
     {
+        "id": "25",
         "clase": "Arquero",
         "tipo": "pecho",
         "imagen": "./assent/arm-12 (1).png"
     },
     {
+        "id": "26",
         "clase": "Arquero",
         "tipo": "glovs",
         "imagen": "./assent/arm-12 (3).png"
     },
     {
+        "id": "27",
         "clase": "Arquero",
         "tipo": "pants",
         "imagen": "./assent/arm-12 (4).png"
     },
     {
+        "id": "28",
         "clase": "Arquero",
         "tipo": "bots",
         "imagen": "./assent/arm-12 (2).png"
     },
     {
+        "id": "29",
         "clase": "Arquero",
         "tipo": "weapon",
         "imagen": "./assent/w-12.png"
     },
     {
+        "id": "30",
         "clase": "Brujo",
         "tipo": "pecho",
         "imagen": "./assent/arm-6 (1).png"
     },
     {
+        "id": "31",
         "clase": "Brujo",
         "tipo": "glovs",
         "imagen": "./assent/arm-6 (3).png"
     },
     {
+        "id": "32",
         "clase": "Brujo",
         "tipo": "pants",
         "imagen": "./assent/arm-6 (4).png"
     },
     {
+        "id": "33",
         "clase": "Brujo",
         "tipo": "bots",
         "imagen": "./assent/arm-6 (2).png"
     },
     {
+        "id": "34",
         "clase": "Brujo",
         "tipo": "weapon",
         "imagen": "./assent/w-6.png"
     },
     {
+        "id": "35",
         "clase": "Brujo",
         "tipo": "pecho",
         "imagen": "./assent/arm-9 (1).png"
     },
     {
+        "id": "36",
         "clase": "Brujo",
         "tipo": "glovs",
         "imagen": "./assent/arm-9 (3).png"
     },
     {
+        "id": "37",
         "clase": "Brujo",
         "tipo": "pants",
         "imagen": "./assent/arm-9 (4).png"
     },
     {
+        "id": "38",
         "clase": "Brujo",
         "tipo": "bots",
         "imagen": "./assent/arm-9 (2).png"
     },
     {
+        "id": "39",
         "clase": "Brujo",
         "tipo": "weapon",
         "imagen": "./assent/w-9.png"
     },
     {
+        "id": "40",
         "clase": "Brujo",
         "tipo": "pecho",
         "imagen": "./assent/arm-13 (1).png"
     },
     {
+        "id": "41",
         "clase": "Brujo",
         "tipo": "glovs",
         "imagen": "./assent/arm-13 (3).png"
     },
     {
+        "id": "42",
         "clase": "Brujo",
         "tipo": "pants",
         "imagen": "./assent/arm-13 (4).png"
     },
     {
+        "id": "43",
         "clase": "Brujo",
         "tipo": "bots",
         "imagen": "./assent/arm-13 (2).png"
     },
     {
+        "id": "44",
         "clase": "Brujo",
         "tipo": "weapon",
         "imagen": "./assent/w-13.png"

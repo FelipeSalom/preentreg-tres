@@ -1,8 +1,165 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(../assent/12_grback06);
+    background-image: url(../assent/12_grback06.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
     color: #FFF;
+}
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background: rgba(0, 0, 0, 0.90);
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+}
+.texto-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    width: 100vw;
+    height: 93px;
+    background: rgba(0, 0, 0, 0.90);
+}
+.texto-footer p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.btn-accion{
+    margin: 5px;
+    width: 170px;
+    height: 35px;
+    border: 1px solid #FFF;
+    background: #000;
+    color: #FFF;
+}
+.items {
+    width: 85.008px;
+    height: 81.073px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFF;
+    
+}
+.items-img{
+    width: 100%;
+    height: 100%;
+}
+.items:hover,
+.items:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+.titulo{
+    border: 1px solid #FFF;
+    background: #000;
+    color: #FFF;
+    position: relative;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    height: 41px;
+}
+.inventario{
+    padding: 10px;
+    width: 485px;
+    height: 86px;
+    background: rgba(0, 0, 0, 0.90);
+    border: 1px solid #FFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #FFF;
+    overflow-y: scroll;
+}
+.encabezadoInventario{
+    background: #000;
+    color: #FFF;
+    position: relative;
+    top: +16px;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+.ficha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.equipo {
+width: 389.188px;
+height: 428px;
+border: 1px solid #FFF;
+background: #000;
+margin-left: 10px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 41px repeat(3,1fr);
+grid-template-areas: 
+"titulo titulo titulo "
+". casco ."
+"arma peto guantes"
+". botas .";
+justify-items: center;
+align-items: center;
+}
+.t-equipo{
+    grid-area: titulo;
+    text-align: center;
+    vertical-align: middle;
+    width: 389.188px;
+    height: 41px;
+}
+.casco{
+    grid-area: casco;
+}
+.peto{
+    grid-area: peto;
+}
+.arma{
+    grid-area: arma;
+}
+.guantes{
+    grid-area: guantes;
+}
+.botas{
+    grid-area: botas;}
+.atributos {
+width: 338.294px;
+height: 428px;
+border: 1px solid #FFF;
+background: #000;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.contenido-atributos{
+    margin-left: 10px;
+    text-align: left;
 }

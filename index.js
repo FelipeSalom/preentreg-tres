@@ -43,13 +43,15 @@ function abrirMain(id) {
 fetch("clases.json")
                 .then(response => response.json())
                 .then(data => {
+
                     document.getElementById("imagen-personaje").innerHTML = '<img src="'+data[claseJugador].imagenSexo[0].normal+'" alt=" " class="img-normal">'+'<img src="'+data[claseJugador].imagenSexo[0].chibi+'" alt=" " class="img-chibi">';
-                    document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[0].nombre+data[claseJugador].habilidades[0].descripcion;
-                    document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[1].nombre+data[claseJugador].habilidades[1].descripcion;
+                    document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell">'+data[claseJugador].habilidades[0].nombre+"<br>"+data[claseJugador].habilidades[0].descripcion;
+                    document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell">'+data[claseJugador].habilidades[1].nombre+"<br>"+data[claseJugador].habilidades[1].descripcion;
                     document.getElementById("items").innerHTML = '<img src="'+data[claseJugador].inventario[4].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[0].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[1].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[2].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[3].imagen+'" alt=" " class="items">'
                     document.getElementById("atq").innerHTML = data[claseJugador].atributos.ataque
                     document.getElementById("dfz").innerHTML = data[claseJugador].atributos.defenza
                     document.getElementById("vit").innerHTML = data[claseJugador].atributos.vitalidad
+                    document.getElementById("descripcion").innerHTML = data[claseJugador].descripcion
                     equipoJugador =  data[claseJugador].inventario
                 });
 function limpiarCampos(){
@@ -67,12 +69,13 @@ function limpiarCampos(){
     .then(response => response.json())
     .then(data => {
         document.getElementById("imagen-personaje").innerHTML = '<img src="'+data[claseJugador].imagenSexo[0].normal+'" alt=" " class="img-normal">'+'<img src="'+data[claseJugador].imagenSexo[0].chibi+'" alt=" " class="img-chibi">';
-        document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[0].nombre+data[claseJugador].habilidades[0].descripcion;
-        document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[1].nombre+data[claseJugador].habilidades[1].descripcion;
+        document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell">'+data[claseJugador].habilidades[0].nombre+"<br>"+data[claseJugador].habilidades[0].descripcion;
+        document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell">'+data[claseJugador].habilidades[1].nombre+"<br>"+data[claseJugador].habilidades[1].descripcion;
         document.getElementById("items").innerHTML = '<img src="'+data[claseJugador].inventario[4].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[0].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[1].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[2].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[3].imagen+'" alt=" " class="items">'
         document.getElementById("atq").innerHTML = data[claseJugador].atributos.ataque
         document.getElementById("dfz").innerHTML = data[claseJugador].atributos.defenza
         document.getElementById("vit").innerHTML = data[claseJugador].atributos.vitalidad
+        document.getElementById("descripcion").innerHTML = data[claseJugador].descripcion
     });
 }
 function abrirModal(id) {
@@ -172,11 +175,12 @@ function mostrarFicha(){
     .then(response => response.json())
     .then(data => {
         document.getElementById("imagen-personaje").innerHTML = '<img src="'+data[claseJugador].imagenSexo[sexoJugador].normal+'" alt=" " class="img-normal">'+'<img src="'+data[claseJugador].imagenSexo[sexoJugador].chibi+'" alt=" " class="img-chibi">';
-        document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[0].nombre+data[claseJugador].habilidades[0].descripcion;
-        document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell-div">'+data[claseJugador].habilidades[1].nombre+data[claseJugador].habilidades[1].descripcion;
+        document.getElementById("habilidad-1").innerHTML = '<img src="'+data[claseJugador].habilidades[0].imagen+'" alt=" " class="spell">'+data[claseJugador].habilidades[0].nombre+"<br>"+data[claseJugador].habilidades[0].descripcion;
+        document.getElementById("habilidad-2").innerHTML = '<img src="'+data[claseJugador].habilidades[1].imagen+'" alt=" " class="spell">'+data[claseJugador].habilidades[1].nombre+"<br>"+data[claseJugador].habilidades[1].descripcion;
         document.getElementById("items").innerHTML = '<img src="'+data[claseJugador].inventario[4].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[0].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[1].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[2].imagen+'" alt=" " class="items">'+'<img src="'+data[claseJugador].inventario[3].imagen+'" alt=" " class="items">'
         document.getElementById("atq").innerHTML = data[claseJugador].atributos.ataque
         document.getElementById("dfz").innerHTML = data[claseJugador].atributos.defenza
         document.getElementById("vit").innerHTML = data[claseJugador].atributos.vitalidad
+        document.getElementById("descripcion").innerHTML = data[claseJugador].descripcion
     });
 }
